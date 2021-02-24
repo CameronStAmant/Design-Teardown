@@ -26,21 +26,28 @@ body {
 
 .main-article {
   grid-area: main;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 50px;
   background-color: rgb(97, 97, 97);
 }
 
 .subscribe {
   grid-area: subscribe;
+
   background-color: rgb(53, 53, 53);
 }
 
 .sub-article1 {
   grid-area: sub1;
+  font-family: 'Raleway';
+  font-size: 50px;
+  font-weight: 875;
   background-color: rgb(171, 171, 171);
 }
 
 .sub-article2 {
   grid-area: sub2;
+  font-family: 'Piazzolla', serif;
   background-color: rgb(171, 171, 171);
 }
 
