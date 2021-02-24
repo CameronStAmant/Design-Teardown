@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  margin: 0;
+  padding: 0;
+  grid-area: 'nav' 'article';
+  gap: 30px;
+}
+
+.nav {
+  background-color: rgb(26, 26, 26);
+}
+
+.article {
+  display: grid;
+  height: 1190px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr repeat(3, 1fr);
+  grid-template-areas:
+    'main main subscribe'
+    'sub1 sub1 subscribe'
+    'sub2 sub2 .'
+    '. all-articles .';
+  gap: 30px;
+}
+
+.main-article {
+  grid-area: main;
+  background-color: rgb(97, 97, 97);
+}
+
+.subscribe {
+  grid-area: subscribe;
+  background-color: rgb(53, 53, 53);
+}
+
+.sub-article1 {
+  grid-area: sub1;
+  background-color: rgb(171, 171, 171);
+}
+
+.sub-article2 {
+  grid-area: sub2;
+  background-color: rgb(171, 171, 171);
+}
+
+.all-articles {
+  grid-area: all-articles;
+  background-color: rgb(230, 230, 230);
+}
